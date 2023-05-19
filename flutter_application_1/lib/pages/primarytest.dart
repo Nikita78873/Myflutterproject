@@ -11,10 +11,9 @@ class _PrimaryTestState extends State<PrimaryTest> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        //малиновая тема для приложения
-        //backgroundColor: Colors.redAccent,
+
         appBar: AppBar(
-        title: Text('Главная'),
+        title: Text('Вторая страница'),
     backgroundColor: Colors.black45,
     ),
     body: SafeArea(
