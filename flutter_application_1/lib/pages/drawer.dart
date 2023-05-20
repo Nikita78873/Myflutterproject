@@ -13,9 +13,19 @@ class _MainDrawerState extends State<MainDrawer> {
     return Drawer(
       child: ListView(
         children: [
-          ElevatedButton(
-              onPressed: (){},
-              child: Text('О приложении'))
+          // кнопка "настройки"
+          ListTile(
+              onTap: () {},
+              title: Text('Настройки'),
+              leading: Icon(Icons.settings),
+          ),
+
+          //кнопка "о программе" - ссылка на страницу с документацией пользователя
+          ListTile(
+            onTap: () {},
+            title: Text('О приложении'),
+            leading: Icon(Icons.question_mark),
+          ),
         ],
       ),
     );

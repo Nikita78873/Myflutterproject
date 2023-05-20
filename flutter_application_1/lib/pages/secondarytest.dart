@@ -14,7 +14,7 @@ class _SecondaryTestState extends State<SecondaryTest> {
 
       appBar: AppBar(
         title: Text('3 страница'),
-        backgroundColor: Colors.black45,
+        backgroundColor: Colors.blueGrey,
       ),
       body: SafeArea(
         child: Row(
