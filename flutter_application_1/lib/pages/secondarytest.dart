@@ -13,15 +13,14 @@ class _SecondaryTestState extends State<SecondaryTest> {
     return Scaffold(
 
       appBar: AppBar(
-        title: Text('3 страница'),
-        backgroundColor: Colors.blueGrey,
+        title: Text('Данные о нештатной ситуации'),
+        backgroundColor: Colors.grey,
       ),
       body: SafeArea(
-        child: Row(
+        child: ListView(
             children: [
-              Column(
-                children: [Text('3 страница'),],
-              ),]
+
+              ]
         ),
 
       ),

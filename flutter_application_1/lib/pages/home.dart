@@ -25,7 +25,7 @@ class _HomeState extends State<Home> {
       //шапка приложения
       appBar: AppBar(
         title: Text('Главная'),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.grey,
       ),
 
       //тело приложения размещено в безопасной зоне.
@@ -33,33 +33,45 @@ class _HomeState extends State<Home> {
       body: SafeArea(
         //строка (чтобы занять всё свободное пространство справа налево)
         child: ListView(
-          padding: EdgeInsets.all(10.0),
+          padding: EdgeInsets.all(15.0),
           children: [
             Text('Введите данные о подразделении, месте несения службы и т.д.',
-              style: TextStyle(fontSize: 20.0),),
+              style: TextStyle(fontSize: 18.0),),
+
+            Divider(),
 
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/primary');
               },
-              child: Text('Ввод исходных данных',),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blueGrey),
+              child: Text('Ввод исходных данных',
+                style: TextStyle(fontSize: 18.0),),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey,
+                  fixedSize: Size.fromHeight(50.0)),
             ),
 
+            Divider(),
+
             Text('Введите данные о нештатной ситуации',
-              style: TextStyle(fontSize: 20.0),),
+              style: TextStyle(fontSize: 18.0),),
+
+            Divider(),
 
             ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/secondary');
               },
-              child: Text('Нештатная ситуация',),
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.blueGrey),
+              child: Text('Нештатная ситуация',
+                style: TextStyle(fontSize: 18.0),),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey,
+                  fixedSize: Size.fromHeight(50.0))
             ),
+
           ],
         )
       ),
-
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
@@ -70,7 +82,7 @@ class _HomeState extends State<Home> {
           // });
         },
         child: Text('+', style: TextStyle(fontSize: 20.0),),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Colors.grey,
       ),
     );
   }

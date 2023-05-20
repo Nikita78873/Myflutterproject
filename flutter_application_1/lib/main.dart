@@ -5,6 +5,7 @@ import 'package:flutter_application_1/pages/secondarytest.dart';//подключ
 
 
 void main() => runApp(MaterialApp(
+
   initialRoute: '/', //начальная страница
   routes: {
     '/':(context) => Home(), //главная страница
