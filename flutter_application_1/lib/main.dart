@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home.dart'; //подключаем класс Home
 import 'package:flutter_application_1/pages/primarytest.dart';//подключаем класс PrimaryTest
 import 'package:flutter_application_1/pages/secondarytest.dart';//подключаем класс SecondaryTest
-
+import 'package:flutter_application_1/pages/instructions.dart';
 
 void main() => runApp(MaterialApp(
 
@@ -11,6 +11,7 @@ void main() => runApp(MaterialApp(
     '/':(context) => Home(), //главная страница
     '/primary':(context) => PrimaryTest(),
     '/secondary':(context) => SecondaryTest(),
+    '/instructions':(context) => InstructionsPage(),
 
   },
 ),

@@ -24,7 +24,7 @@ class _MainDrawerState extends State<MainDrawer> {
           ListTile(
             onTap: () {},
             title: Text('О приложении'),
-            leading: Icon(Icons.question_mark),
+            leading: Icon(Icons.info_outline),
           ),
         ],
       ),

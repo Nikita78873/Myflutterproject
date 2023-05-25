@@ -68,21 +68,8 @@ class _HomeState extends State<Home> {
                   backgroundColor: Colors.grey,
                   fixedSize: Size.fromHeight(50.0))
             ),
-
           ],
-        )
-      ),
-
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.pushNamed(context, '/secondary');
-
-          // setState(() {
-          //   _count++;
-          // });
-        },
-        child: Text('+', style: TextStyle(fontSize: 20.0),),
-        backgroundColor: Colors.grey,
+        ),
       ),
     );
   }

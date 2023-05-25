@@ -19,7 +19,7 @@ class _PrimaryTestState extends State<PrimaryTest> {
     return Scaffold(
 
         appBar: AppBar(
-        title: Text('Изменить исходные данные'),
+        title: Text('Вопрос 1 из 12'),
     backgroundColor: Colors.grey,
     ),
     body: SafeArea(
@@ -34,9 +34,7 @@ class _PrimaryTestState extends State<PrimaryTest> {
               value: checkBoxValue1,
               controlAffinity: ListTileControlAffinity.leading,
               onChanged: (val){
-                setState(() {
-                    checkBoxValue1 = val!;
-                });
+                setState(() => checkBoxValue1 = val!);
               }),
 
           CheckboxListTile(
@@ -44,15 +42,23 @@ class _PrimaryTestState extends State<PrimaryTest> {
               value: checkBoxValue2,
               controlAffinity: ListTileControlAffinity.leading,
               onChanged: (val2){
-                setState(() {
-                  checkBoxValue2 = val2!;
-                });
+                setState(() => checkBoxValue2 = val2!);
               }),
 
+          ElevatedButton(
+              onPressed: checkBoxValue1!=checkBoxValue2?() {
+                setState(() => Navigator.pushNamed(context, '/instructions'));
+              }
+              :null,
+              child: Text('Продолжить',
+                style: TextStyle(fontSize: 18.0),),
+              style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey,
+                  fixedSize: Size.fromHeight(50.0))
+          ),
         ],
       ),
     ),
     );
-
   }
 }
