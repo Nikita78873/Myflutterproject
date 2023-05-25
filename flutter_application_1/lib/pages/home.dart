@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
 
             ElevatedButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/test');
+                Navigator.pushNamed(context, '/primary');
               },
               child: Text('Ввод исходных данных',
                 style: TextStyle(fontSize: 18.0),),
